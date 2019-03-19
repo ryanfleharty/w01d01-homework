@@ -1,0 +1,70 @@
+
+Part One:
+1)	Davids-MacBook-Air:death_star davidkrieger$ touch darth_vader.txt pricess_leia.txt storm_trooper.txt
+
+2)	Davids-MacBook-Air:homework_part_1 davidkrieger$ mkdir galaxy_far_far_away
+	Davids-MacBook-Air:homework_part_1 davidkrieger$ cd galaxy_far_far_away/
+	Davids-MacBook-Air:galaxy_far_far_away davidkrieger$ mkdir tatooine
+	Davids-MacBook-Air:galaxy_far_far_away davidkrieger$ cd tatooine/
+	Davids-MacBook-Air:tatooine davidkrieger$ touch luke.txt ben_kenobi.txt
+	Davids-MacBook-Air:tatooine davidkrieger$ ls
+	ben_kenobi.txt	luke.txt
+
+3)	Davids-MacBook-Air:tatooine davidkrieger$ mkdir millenium_falcon
+	Davids-MacBook-Air:tatooine davidkrieger$ cd millenium_falcon/
+	Davids-MacBook-Air:millenium_falcon davidkrieger$ touch han_solo.txt chewbaca.txt
+	Davids-MacBook-Air:millenium_falcon davidkrieger$ ls
+	chewbaca.txt	han_solo.txt
+
+Part Two:
+4)	Davids-MacBook-Air:tatooine davidkrieger$ mv ben_kenobi.txt obi_wan.txt
+
+Part Three:
+Davids-MacBook-Air:homework_part_1 davidkrieger$ cp death_star/storm_trooper.txt galaxy_far_far_away/tatooine/
+
+Part Four:
+6) 	Davids-MacBook-Air:homework_part_1 davidkrieger$ cp death_star/storm_trooper.txt galaxy_far_far_away/tatooine/
+	Davids-MacBook-Air:homework_part_1 davidkrieger$ 
+7)	mv galaxy_far_far_away/tatooine/millenium_falcon/ galaxy_far_far_away/
+8)	mv galaxy_far_far_away/millenium_falcon/ death_star/
+9)	mv death_star/pricess_leia.txt death_star/millenium_falcon/
+
+Part Five:
+10) mv death_star/millenium_falcon/obi_wan.txt 
+
+Part Six:
+11) cd galaxy_far_far_away/
+	Davids-MacBook-Air:galaxy_far_far_away davidkrieger$ mkdir yavin_4	
+12)	mv death_star/millenium_falcon/ galaxy_far_far_away/yavin_4/
+13)	cd galaxy_far_far_away/yavin_4/
+	Davids-MacBook-Air:yavin_4 davidkrieger$ mkdir x_wing
+14)	mv millenium_falcon/pricess_leia.txt millenium_falcon/luke.txt x_wing/
+
+15)	mv galaxy_far_far_away/yavin_4/x_wing/ galaxy_far_far_away/yavin_4/millenium_falcon/ galaxy_far_far_away/
+
+16)	cd death_star/
+	mkdir tie_fighter_1 tie_fighter_2 tie_fighter_3
+
+17)	mv darth_vader.txt tie_fighter_1
+
+18)	Davids-MacBook-Air:death_star davidkrieger$ cp storm_trooper.txt tie_fighter_2
+	Davids-MacBook-Air:death_star davidkrieger$ cp storm_trooper.txt tie_fighter_3
+19) mv tie_fighter_1 tie_fighter_2 tie_fighter_3 ../galaxy_far_far_away/
+
+Part Seven:
+20)	rm -r galaxy_far_far_away/tie_fighter_2 galaxy_far_far_away/tie_fighter_3
+Part Eight:
+21)	Davids-MacBook-Air:x_wing davidkrieger$ touch the_force.txt
+22)	Davids-MacBook-Air:x_wing davidkrieger$ ls
+	luke.txt		pricess_leia.txt	the_force.txt
+	Davids-MacBook-Air:x_wing davidkrieger$ cd ..
+	Davids-MacBook-Air:galaxy_far_far_away davidkrieger$ ls
+	millenium_falcon	tie_fighter_2		yavin_4
+	tatooine		tie_fighter_3
+	tie_fighter_1		x_wing
+	Davids-MacBook-Air:galaxy_far_far_away davidkrieger$ cd ..
+	Davids-MacBook-Air:homework_part_1 davidkrieger$ ls
+	commands.txt		death_star		galaxy_far_far_away
+	Davids-MacBook-Air:homework_part_1 davidkrieger$ rm -r death_star/
+
+23)	Davids-MacBook-Air:homework_part_1 davidkrieger$ mv galaxy_far_far_away/x_wing/ galaxy_far_far_away/millenium_falcon/ galaxy_far_far_away/yavin_4/
