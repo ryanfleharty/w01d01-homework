@@ -1,0 +1,229 @@
+mkdir death_star
+Last login: Mon Mar 18 16:16:26 on ttys000
+Vedas-MacBook-Pro:~ vedaanderson$ cd
+Vedas-MacBook-Pro:~ vedaanderson$ ls
+Applications	Downloads	Music		funny_things
+Desktop		Library		Pictures	ga-denver
+Documents	Movies		Public		world
+Vedas-MacBook-Pro:~ vedaanderson$ mv ga-denver june_bugs
+Vedas-MacBook-Pro:~ vedaanderson$ ls
+Applications	Downloads	Music		funny_things
+Desktop		Library		Pictures	june_bugs
+Documents	Movies		Public		world
+Vedas-MacBook-Pro:~ vedaanderson$ cd june_bugs
+Vedas-MacBook-Pro:june_bugs vedaanderson$ ls
+3-18-terminal	excercise
+Vedas-MacBook-Pro:june_bugs vedaanderson$ cd 3-18-terminal/
+Vedas-MacBook-Pro:3-18-terminal vedaanderson$ ls
+command-line-lab	dean_koontz		hello_app
+Vedas-MacBook-Pro:3-18-terminal vedaanderson$ mkdir homework
+Vedas-MacBook-Pro:3-18-terminal vedaanderson$ cd homework
+Vedas-MacBook-Pro:homework vedaanderson$ mkdir homework_part_1
+Vedas-MacBook-Pro:homework vedaanderson$ cd homework_part_1/
+Vedas-MacBook-Pro:homework_part_1 vedaanderson$ touch commands.txt
+Vedas-MacBook-Pro:homework_part_1 vedaanderson$ scod commands.txt
+-bash: scod: command not found
+Vedas-MacBook-Pro:homework_part_1 vedaanderson$ scode commands.tx
+The file /Users/vedaanderson/june_bugs/3-18-terminal/homework/homework_part_1/commands.tx does not exist.
+Vedas-MacBook-Pro:homework_part_1 vedaanderson$ scode commands.txt
+Vedas-MacBook-Pro:homework_part_1 vedaanderson$ mkdir death_star
+Vedas-MacBook-Pro:homework_part_1 vedaanderson$ cd death_star/
+Vedas-MacBook-Pro:death_star vedaanderson$ touch darth_vader.txt/princess_leia.txt/storm_trooper.txt
+touch: darth_vader.txt/princess_leia.txt/storm_trooper.txt: No such file or directory
+Vedas-MacBook-Pro:death_star vedaanderson$ ls
+Vedas-MacBook-Pro:death_star vedaanderson$ ls
+Vedas-MacBook-Pro:death_star vedaanderson$ tree
+.
+
+0 directories, 0 files
+Vedas-MacBook-Pro:death_star vedaanderson$ touch darth_vader.txt
+Vedas-MacBook-Pro:death_star vedaanderson$ touch princess_leia.txt
+Vedas-MacBook-Pro:death_star vedaanderson$ touch storm_trooper.txt
+Vedas-MacBook-Pro:death_star vedaanderson$ cd ..
+Vedas-MacBook-Pro:homework_part_1 vedaanderson$ mkdir galaxy_far_far_away
+Vedas-MacBook-Pro:homework_part_1 vedaanderson$ cd galaxy_far_far_away/
+Vedas-MacBook-Pro:galaxy_far_far_away vedaanderson$ mkdir tatooine
+Vedas-MacBook-Pro:galaxy_far_far_away vedaanderson$ cd tatooine/
+Vedas-MacBook-Pro:tatooine vedaanderson$ touch luke.txt
+Vedas-MacBook-Pro:tatooine vedaanderson$ touch ben_kenobi.txt
+Vedas-MacBook-Pro:tatooine vedaanderson$ mkdir millenium_falcon
+Vedas-MacBook-Pro:tatooine vedaanderson$ cd millenium_falcon/
+Vedas-MacBook-Pro:millenium_falcon vedaanderson$ touch han_solo.txt
+Vedas-MacBook-Pro:millenium_falcon vedaanderson$ touch chewbaca.txt
+Vedas-MacBook-Pro:millenium_falcon vedaanderson$ cd ..
+Vedas-MacBook-Pro:tatooine vedaanderson$ mv ben_kenobi.txt obi_wan.txt
+Vedas-MacBook-Pro:tatooine vedaanderson$ ls
+luke.txt		millenium_falcon	obi_wan.txt
+Vedas-MacBook-Pro:tatooine vedaanderson$ cd ..
+Vedas-MacBook-Pro:galaxy_far_far_away vedaanderson$ cd ..
+Vedas-MacBook-Pro:homework_part_1 vedaanderson$ cd death_star/
+Vedas-MacBook-Pro:death_star vedaanderson$ cp storm_trooper.txt tatooine
+Vedas-MacBook-Pro:death_star vedaanderson$ cd ..
+Vedas-MacBook-Pro:homework_part_1 vedaanderson$ cd galaxy_far_far_away/
+Vedas-MacBook-Pro:galaxy_far_far_away vedaanderson$ cd tatooine/
+Vedas-MacBook-Pro:tatooine vedaanderson$ ls
+luke.txt		millenium_falcon	obi_wan.txt
+Vedas-MacBook-Pro:tatooine vedaanderson$ man cp
+Vedas-MacBook-Pro:tatooine vedaanderson$ cd ..
+Vedas-MacBook-Pro:galaxy_far_far_away vedaanderson$ cd ..
+Vedas-MacBook-Pro:homework_part_1 vedaanderson$ cp ~/death_star/storm_trooper.txt ~/tatooine
+cp: /Users/vedaanderson/death_star/storm_trooper.txt: No such file or directory
+Vedas-MacBook-Pro:homework_part_1 vedaanderson$ ls
+commands.txt		death_star		galaxy_far_far_away
+Vedas-MacBook-Pro:homework_part_1 vedaanderson$ cd galaxy_far_far_away/
+Vedas-MacBook-Pro:galaxy_far_far_away vedaanderson$ ls
+tatooine
+Vedas-MacBook-Pro:galaxy_far_far_away vedaanderson$ ls
+tatooine
+Vedas-MacBook-Pro:galaxy_far_far_away vedaanderson$ cd tatooine/
+Vedas-MacBook-Pro:tatooine vedaanderson$ ls
+luke.txt		millenium_falcon	obi_wan.txt
+Vedas-MacBook-Pro:tatooine vedaanderson$ man mv
+Vedas-MacBook-Pro:tatooine vedaanderson$ mv luke.txt millenium_falcon
+Vedas-MacBook-Pro:tatooine vedaanderson$ mv obi_wan.txt millenium_falcon
+Vedas-MacBook-Pro:tatooine vedaanderson$ ls
+millenium_falcon
+Vedas-MacBook-Pro:tatooine vedaanderson$ mv -r millenium_falcon galaxy_far_far_away
+mv: illegal option -- r
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+Vedas-MacBook-Pro:tatooine vedaanderson$ man mv
+Vedas-MacBook-Pro:tatooine vedaanderson$ cd..
+-bash: cd..: command not found
+Vedas-MacBook-Pro:tatooine vedaanderson$ cd ..
+Vedas-MacBook-Pro:galaxy_far_far_away vedaanderson$ ls
+tatooine
+Vedas-MacBook-Pro:galaxy_far_far_away vedaanderson$ mv mellenium_falcon
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+Vedas-MacBook-Pro:galaxy_far_far_away vedaanderson$ cd tatooine/
+Vedas-MacBook-Pro:tatooine vedaanderson$ cd millenium_falcon/
+Vedas-MacBook-Pro:millenium_falcon vedaanderson$ mv millenium_falcon galaxy_far_far_away
+mv: rename millenium_falcon to galaxy_far_far_away: No such file or directory
+Vedas-MacBook-Pro:millenium_falcon vedaanderson$ mv -r millenium_falcon galaxy_far_far_away
+mv: illegal option -- r
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+Vedas-MacBook-Pro:millenium_falcon vedaanderson$ cd ..
+Vedas-MacBook-Pro:tatooine vedaanderson$ cd ..
+Vedas-MacBook-Pro:galaxy_far_far_away vedaanderson$ cp -r millenium_falcon galaxy_far_far_away
+cp: millenium_falcon: No such file or directory
+Vedas-MacBook-Pro:galaxy_far_far_away vedaanderson$ cd tatooine/
+Vedas-MacBook-Pro:tatooine vedaanderson$ ls
+millenium_falcon
+Vedas-MacBook-Pro:tatooine vedaanderson$ mv millenium_falcon galaxy_far_far_away
+Vedas-MacBook-Pro:tatooine vedaanderson$ cd ..
+Vedas-MacBook-Pro:galaxy_far_far_away vedaanderson$ mv millenium_falcon death_star
+mv: rename millenium_falcon to death_star: No such file or directory
+Vedas-MacBook-Pro:galaxy_far_far_away vedaanderson$ cd tatooine/
+Vedas-MacBook-Pro:tatooine vedaanderson$ mv millenium_falcon death_star
+mv: rename millenium_falcon to death_star: No such file or directory
+Vedas-MacBook-Pro:tatooine vedaanderson$ cd ..
+Vedas-MacBook-Pro:galaxy_far_far_away vedaanderson$ cd ..
+Vedas-MacBook-Pro:homework_part_1 vedaanderson$ cd death_star/
+Vedas-MacBook-Pro:death_star vedaanderson$ mv princess_leia.txt millenium_falcon
+Vedas-MacBook-Pro:death_star vedaanderson$ cd millenium_falcon 
+-bash: cd: millenium_falcon: Not a directory
+Vedas-MacBook-Pro:death_star vedaanderson$ ls
+darth_vader.txt		millenium_falcon	storm_trooper.txt	tatooine
+Vedas-MacBook-Pro:death_star vedaanderson$ cd millenium_falcon 
+-bash: cd: millenium_falcon: Not a directory
+Vedas-MacBook-Pro:death_star vedaanderson$ ls
+darth_vader.txt		millenium_falcon	storm_trooper.txt	tatooine
+Vedas-MacBook-Pro:death_star vedaanderson$ rm obi_wan.txt
+rm: obi_wan.txt: No such file or directory
+Vedas-MacBook-Pro:death_star vedaanderson$ cd ..
+Vedas-MacBook-Pro:homework_part_1 vedaanderson$ ls
+commands.txt		death_star		galaxy_far_far_away
+Vedas-MacBook-Pro:homework_part_1 vedaanderson$ cd galaxy_far_far_away/
+Vedas-MacBook-Pro:galaxy_far_far_away vedaanderson$ mkdir yavin_4
+Vedas-MacBook-Pro:galaxy_far_far_away vedaanderson$ cd ..
+Vedas-MacBook-Pro:homework_part_1 vedaanderson$ ls
+commands.txt		death_star		galaxy_far_far_away
+Vedas-MacBook-Pro:homework_part_1 vedaanderson$  cd death_star/
+Vedas-MacBook-Pro:death_star vedaanderson$ mv millenium_falcon yavin_4
+Vedas-MacBook-Pro:death_star vedaanderson$ cd yavin_4 
+-bash: cd: yavin_4: Not a directory
+Vedas-MacBook-Pro:death_star vedaanderson$ cd ..
+Vedas-MacBook-Pro:homework_part_1 vedaanderson$ ls
+commands.txt		death_star		galaxy_far_far_away
+Vedas-MacBook-Pro:homework_part_1 vedaanderson$ cd galaxy_far_far_away/
+Vedas-MacBook-Pro:galaxy_far_far_away vedaanderson$ cd yavin_4/
+Vedas-MacBook-Pro:yavin_4 vedaanderson$ mkdir x_wing
+Vedas-MacBook-Pro:yavin_4 vedaanderson$ mv princess_leia.txt yavin_4
+mv: rename princess_leia.txt to yavin_4: No such file or directory
+Vedas-MacBook-Pro:yavin_4 vedaanderson$ ls
+x_wing
+Vedas-MacBook-Pro:yavin_4 vedaanderson$ mv princess_leia.txt 
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+Vedas-MacBook-Pro:yavin_4 vedaanderson$ ls
+x_wing
+Vedas-MacBook-Pro:yavin_4 vedaanderson$ mv millenium/princess_leia.txt yavin_4
+mv: rename millenium/princess_leia.txt to yavin_4: No such file or directory
+Vedas-MacBook-Pro:yavin_4 vedaanderson$ ls
+x_wing
+Vedas-MacBook-Pro:yavin_4 vedaanderson$ cd ..
+Vedas-MacBook-Pro:galaxy_far_far_away vedaanderson$ mv princess_leia.txt yavin_4
+mv: rename princess_leia.txt to yavin_4/princess_leia.txt: No such file or directory
+Vedas-MacBook-Pro:galaxy_far_far_away vedaanderson$ mv luke.txt x_wing
+mv: rename luke.txt to x_wing: No such file or directory
+Vedas-MacBook-Pro:galaxy_far_far_away vedaanderson$ ls
+tatooine	yavin_4
+Vedas-MacBook-Pro:galaxy_far_far_away vedaanderson$ mv x_wing galaxy_far_far_away
+mv: rename x_wing to galaxy_far_far_away: No such file or directory
+Vedas-MacBook-Pro:galaxy_far_far_away vedaanderson$ cd ..
+Vedas-MacBook-Pro:homework_part_1 vedaanderson$ ls
+commands.txt		death_star		galaxy_far_far_away
+Vedas-MacBook-Pro:homework_part_1 vedaanderson$ cd death_star/
+Vedas-MacBook-Pro:death_star vedaanderson$ mkdir tie_fighter_1
+Vedas-MacBook-Pro:death_star vedaanderson$ mkdir tie_fighter_2
+Vedas-MacBook-Pro:death_star vedaanderson$ mkdir tie_fighter_3
+Vedas-MacBook-Pro:death_star vedaanderson$ mv darth_vader tie_fighter_1
+mv: rename darth_vader to tie_fighter_1/darth_vader: No such file or directory
+Vedas-MacBook-Pro:death_star vedaanderson$ mv darth_vader.txt tie_fighter_1
+Vedas-MacBook-Pro:death_star vedaanderson$ cp storm_trooper.txt tie_fighter_2
+Vedas-MacBook-Pro:death_star vedaanderson$ cp storm_trooper.txt tie_fighter_3
+Vedas-MacBook-Pro:death_star vedaanderson$ mv tie_fighter_1 galaxy_far_far_away
+Vedas-MacBook-Pro:death_star vedaanderson$ mv -r tie_fighter_2 galaxy_far_far_away
+mv: illegal option -- r
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+Vedas-MacBook-Pro:death_star vedaanderson$ mv tie_fighter_2 galaxy_far_far_away
+Vedas-MacBook-Pro:death_star vedaanderson$ mv tie_fighter_3 galaxy_far_far_away
+Vedas-MacBook-Pro:death_star vedaanderson$ rm -r tie_fighter_2
+rm: tie_fighter_2: No such file or directory
+Vedas-MacBook-Pro:death_star vedaanderson$ cd ..
+Vedas-MacBook-Pro:homework_part_1 vedaanderson$ ls
+commands.txt		death_star		galaxy_far_far_away
+Vedas-MacBook-Pro:homework_part_1 vedaanderson$ cd galaxy_far_far_away/
+Vedas-MacBook-Pro:galaxy_far_far_away vedaanderson$ rm -r tie_fighter_2
+rm: tie_fighter_2: No such file or directory
+Vedas-MacBook-Pro:galaxy_far_far_away vedaanderson$ rm -r tie_fighter_3
+rm: tie_fighter_3: No such file or directory
+Vedas-MacBook-Pro:galaxy_far_far_away vedaanderson$ cd yavin_4/
+Vedas-MacBook-Pro:yavin_4 vedaanderson$ cd x_wing/
+Vedas-MacBook-Pro:x_wing vedaanderson$ touch the_force.txt
+Vedas-MacBook-Pro:x_wing vedaanderson$ cd ..
+Vedas-MacBook-Pro:yavin_4 vedaanderson$ cd ..
+Vedas-MacBook-Pro:galaxy_far_far_away vedaanderson$ las
+-bash: las: command not found
+Vedas-MacBook-Pro:galaxy_far_far_away vedaanderson$ ls
+tatooine	yavin_4
+Vedas-MacBook-Pro:galaxy_far_far_away vedaanderson$ cd ..
+Vedas-MacBook-Pro:homework_part_1 vedaanderson$ rm -r death_star
+Vedas-MacBook-Pro:homework_part_1 vedaanderson$ mv millenium_falcon yavin_4
+mv: rename millenium_falcon to yavin_4: No such file or directory
+Vedas-MacBook-Pro:homework_part_1 vedaanderson$ ls
+commands.txt		galaxy_far_far_away
+Vedas-MacBook-Pro:homework_part_1 vedaanderson$ cd galaxy_far_far_away/
+Vedas-MacBook-Pro:galaxy_far_far_away vedaanderson$ mv millenium_falcon yavin_4
+mv: rename millenium_falcon to yavin_4/millenium_falcon: No such file or directory
+Vedas-MacBook-Pro:galaxy_far_far_away vedaanderson$ ls
+tatooine	yavin_4
+Vedas-MacBook-Pro:galaxy_far_far_away vedaanderson$ cd yavin_4/
+Vedas-MacBook-Pro:yavin_4 vedaanderson$ ls
+x_wing
+Vedas-MacBook-Pro:yavin_4 vedaanderson$ mv millenium_falcon yavin_4
+mv: rename millenium_falcon to yavin_4: No such file or directory
+Vedas-MacBook-Pro:yavin_4 vedaanderson$ 
