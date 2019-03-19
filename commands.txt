@@ -1,0 +1,48 @@
+testing
+1.) mkdir 2.) touch 3.) mkdir, touch
+
+4.) mv
+5.) cp
+6.) mv 7.) mv 8.) mv 9.) mv
+10-23.) cp mv rm rm -r touch cat man echo
+
+
+Last login: Tue Mar 19 08:25:56 on ttys001
+Shadis-MacBook-Pro:~ shadiaoutabachi$ pwd
+/Users/shadiaoutabachi
+Shadis-MacBook-Pro:~ shadiaoutabachi$ cd sei-work/
+Shadis-MacBook-Pro:sei-work shadiaoutabachi$ ls
+3-18-terminal
+Shadis-MacBook-Pro:sei-work shadiaoutabachi$ cd 3
+-bash: cd: 3: No such file or directory
+Shadis-MacBook-Pro:sei-work shadiaoutabachi$ cd 3-18-terminal/
+Shadis-MacBook-Pro:3-18-terminal shadiaoutabachi$ ls
+command-line-labhello_apphomework
+Shadis-MacBook-Pro:3-18-terminal shadiaoutabachi$ cd hq
+-bash: cd: hq: No such file or directory
+Shadis-MacBook-Pro:3-18-terminal shadiaoutabachi$ cd homework
+Shadis-MacBook-Pro:homework shadiaoutabachi$ ls
+homework-part-1
+Shadis-MacBook-Pro:homework shadiaoutabachi$ cd homework-part-1/
+Shadis-MacBook-Pro:homework-part-1 shadiaoutabachi$ ls
+commands.txt galaxy_far_far_away
+Shadis-MacBook-Pro:homework-part-1 shadiaoutabachi$ tree
+.
+├── commands.txt
+└── galaxy_far_far_away
+    ├── tatooni
+    │   └── storm_trooper.txt
+    ├── tie_fighter_1
+    │   └── darth_vader.txt
+    └── yavin-4
+        ├── millenium_falcon
+        │   ├── chewy.txt
+        │   ├── hans-solo.txt
+        │   ├── luke.txt
+        │   └── princess_leia.txt
+        └── x-wing
+            └── the_force.txt
+
+6 directories, 8 files
+Shadis-MacBook-Pro:homework-part-1 shadiaoutabachi$ 
+Hello
