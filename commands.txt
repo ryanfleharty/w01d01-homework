@@ -1,0 +1,470 @@
+Samanthas-MacBook-Pro-5:my-favorite-things samanthaaustin$ ls
+2015-media	media
+Samanthas-MacBook-Pro-5:my-favorite-things samanthaaustin$ cd ~
+Samanthas-MacBook-Pro-5:~ samanthaaustin$ ls
+Applications			Postman-osx-7.0.6.zip
+Desktop				Public
+Documents			VSCode-darwin-stable (1).zip
+Downloads			VSCode-darwin-stable.zip
+Dropbox				Visual Studio Code.app
+Example Term Paper.docx		World
+Google Drive			fundamentals
+Library				funny_things
+Movies				june-bugs
+Music				node-v10.15.3.pkg
+Pictures
+Samanthas-MacBook-Pro-5:~ samanthaaustin$ cd june-bugs
+Samanthas-MacBook-Pro-5:june-bugs samanthaaustin$ cd 3-18-terminal/
+Samanthas-MacBook-Pro-5:3-18-terminal samanthaaustin$ ls
+command-line-lab	hello_app
+exercise		labyrinth
+Samanthas-MacBook-Pro-5:3-18-terminal samanthaaustin$ mkdir homework
+Samanthas-MacBook-Pro-5:3-18-terminal samanthaaustin$ cd homework/
+Samanthas-MacBook-Pro-5:homework samanthaaustin$ mkdir homework_part_1
+Samanthas-MacBook-Pro-5:homework samanthaaustin$ cd homework_part_1/
+Samanthas-MacBook-Pro-5:homework_part_1 samanthaaustin$ touch commands.txt
+Samanthas-MacBook-Pro-5:homework_part_1 samanthaaustin$ ls
+commands.txt
+Samanthas-MacBook-Pro-5:homework_part_1 samanthaaustin$ mkdir death_star
+Samanthas-MacBook-Pro-5:homework_part_1 samanthaaustin$ cd death_star/
+Samanthas-MacBook-Pro-5:death_star samanthaaustin$ mkdir darth_vader.txt princess_leia.txt storm_trooper.txt
+Samanthas-MacBook-Pro-5:death_star samanthaaustin$ ls
+darth_vader.txt		princess_leia.txt	storm_trooper.txt
+Samanthas-MacBook-Pro-5:death_star samanthaaustin$ cd ..
+Samanthas-MacBook-Pro-5:homework_part_1 samanthaaustin$ ls
+commands.txt	death_star
+Samanthas-MacBook-Pro-5:homework_part_1 samanthaaustin$ mkdir galaxy_far_far_away
+Samanthas-MacBook-Pro-5:homework_part_1 samanthaaustin$ ls
+commands.txt		death_star		galaxy_far_far_away
+Samanthas-MacBook-Pro-5:homework_part_1 samanthaaustin$ mv death_star galaxy_far_far_away/
+Samanthas-MacBook-Pro-5:homework_part_1 samanthaaustin$ ls
+commands.txt		galaxy_far_far_away
+Samanthas-MacBook-Pro-5:homework_part_1 samanthaaustin$ cd galaxy_far_far_away/
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ ls
+death_star
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ cd ..
+Samanthas-MacBook-Pro-5:homework_part_1 samanthaaustin$ ls
+commands.txt		galaxy_far_far_away
+Samanthas-MacBook-Pro-5:homework_part_1 samanthaaustin$ cd -
+/Users/samanthaaustin/june-bugs/3-18-terminal/homework/homework_part_1/galaxy_far_far_away
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ ls
+death_star
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ mkdir tattoine
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ touch tattoine/luke.txt ben_kenobi.txt
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ ls
+ben_kenobi.txt	death_star	tattoine
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ tree
+.
+├── ben_kenobi.txt
+├── death_star
+│   ├── darth_vader.txt
+│   ├── princess_leia.txt
+│   └── storm_trooper.txt
+└── tattoine
+    └── luke.txt
+
+5 directories, 2 files
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ touch tattoine/ben_kenobi.txt
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ ls
+ben_kenobi.txt	death_star	tattoine
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ mkdir tattoine/millenium_falcon
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ tree
+.
+├── ben_kenobi.txt
+├── death_star
+│   ├── darth_vader.txt
+│   ├── princess_leia.txt
+│   └── storm_trooper.txt
+└── tattoine
+    ├── ben_kenobi.txt
+    ├── luke.txt
+    └── millenium_falcon
+
+6 directories, 3 files
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ cd tattoine/
+Samanthas-MacBook-Pro-5:tattoine samanthaaustin$ cd millenium_falcon/
+Samanthas-MacBook-Pro-5:millenium_falcon samanthaaustin$ ls
+Samanthas-MacBook-Pro-5:millenium_falcon samanthaaustin$ touch han_solo.txt chewbaca.txt
+Samanthas-MacBook-Pro-5:millenium_falcon samanthaaustin$ ls
+chewbaca.txt	han_solo.txt
+Samanthas-MacBook-Pro-5:millenium_falcon samanthaaustin$ cd ../../..
+Samanthas-MacBook-Pro-5:homework_part_1 samanthaaustin$ ls
+commands.txt		galaxy_far_far_away
+Samanthas-MacBook-Pro-5:homework_part_1 samanthaaustin$ cd galaxy_far_far_away/
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ ls
+ben_kenobi.txt	death_star	tattoine
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ tree
+.
+├── ben_kenobi.txt
+├── death_star
+│   ├── darth_vader.txt
+│   ├── princess_leia.txt
+│   └── storm_trooper.txt
+└── tattoine
+    ├── ben_kenobi.txt
+    ├── luke.txt
+    └── millenium_falcon
+        ├── chewbaca.txt
+        └── han_solo.txt
+
+6 directories, 5 files
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ ls
+ben_kenobi.txt	death_star	tattoine
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ rm ben_kenobi.txt 
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ ls
+death_star	tattoine
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ cd tattoine/
+Samanthas-MacBook-Pro-5:tattoine samanthaaustin$ ls
+ben_kenobi.txt		luke.txt		millenium_falcon
+Samanthas-MacBook-Pro-5:tattoine samanthaaustin$ mv ben_kenobi.txt obi_wan.txt
+Samanthas-MacBook-Pro-5:tattoine samanthaaustin$ ;s
+-bash: syntax error near unexpected token `;'
+Samanthas-MacBook-Pro-5:tattoine samanthaaustin$ ls
+luke.txt		millenium_falcon	obi_wan.txt
+Samanthas-MacBook-Pro-5:tattoine samanthaaustin$ tree
+.
+├── luke.txt
+├── millenium_falcon
+│   ├── chewbaca.txt
+│   └── han_solo.txt
+└── obi_wan.txt
+
+1 directory, 4 files
+Samanthas-MacBook-Pro-5:tattoine samanthaaustin$ cd ..
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ ls
+death_star	tattoine
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ cd death_star/
+Samanthas-MacBook-Pro-5:death_star samanthaaustin$ ls
+darth_vader.txt		princess_leia.txt	storm_trooper.txt
+Samanthas-MacBook-Pro-5:death_star samanthaaustin$ cp storm_trooper.txt ../tattoine
+cp: storm_trooper.txt is a directory (not copied).
+Samanthas-MacBook-Pro-5:death_star samanthaaustin$ cp -r storm_trooper.txt ../tattoine
+Samanthas-MacBook-Pro-5:death_star samanthaaustin$ ls
+darth_vader.txt		princess_leia.txt	storm_trooper.txt
+Samanthas-MacBook-Pro-5:death_star samanthaaustin$ cd ..
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ ls
+death_star	tattoine
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ tree
+.
+├── death_star
+│   ├── darth_vader.txt
+│   ├── princess_leia.txt
+│   └── storm_trooper.txt
+└── tattoine
+    ├── luke.txt
+    ├── millenium_falcon
+    │   ├── chewbaca.txt
+    │   └── han_solo.txt
+    ├── obi_wan.txt
+    └── storm_trooper.txt
+
+7 directories, 4 files
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ ls
+death_star	tattoine
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ cd death_star/
+Samanthas-MacBook-Pro-5:death_star samanthaaustin$ ls
+darth_vader.txt		princess_leia.txt	storm_trooper.txt
+Samanthas-MacBook-Pro-5:death_star samanthaaustin$ cd ..
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ cd tattoine/
+Samanthas-MacBook-Pro-5:tattoine samanthaaustin$ ls
+luke.txt		obi_wan.txt
+millenium_falcon	storm_trooper.txt
+Samanthas-MacBook-Pro-5:tattoine samanthaaustin$ mv luke.txt millenium_falcon
+Samanthas-MacBook-Pro-5:tattoine samanthaaustin$ ls
+millenium_falcon	obi_wan.txt		storm_trooper.txt
+Samanthas-MacBook-Pro-5:tattoine samanthaaustin$ mv millenium_falcon ..
+Samanthas-MacBook-Pro-5:tattoine samanthaaustin$ ls
+obi_wan.txt		storm_trooper.txt
+Samanthas-MacBook-Pro-5:tattoine samanthaaustin$ cd ..
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ ls
+death_star		millenium_falcon	tattoine
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ mv millenium_falcon death_star
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ ls
+death_star	tattoine
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ cd death_star/
+Samanthas-MacBook-Pro-5:death_star samanthaaustin$ ls
+darth_vader.txt		princess_leia.txt
+millenium_falcon	storm_trooper.txt
+Samanthas-MacBook-Pro-5:death_star samanthaaustin$ mv princess_leia.txt/
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+Samanthas-MacBook-Pro-5:death_star samanthaaustin$ mv princess_leia.txt/ millenium_falcon/
+Samanthas-MacBook-Pro-5:death_star samanthaaustin$ ls
+darth_vader.txt		millenium_falcon	storm_trooper.txt
+Samanthas-MacBook-Pro-5:death_star samanthaaustin$ tree
+.
+├── darth_vader.txt
+├── millenium_falcon
+│   ├── chewbaca.txt
+│   ├── han_solo.txt
+│   ├── luke.txt
+│   └── princess_leia.txt
+└── storm_trooper.txt
+
+4 directories, 3 files
+Samanthas-MacBook-Pro-5:death_star samanthaaustin$ cd ..
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ ls
+death_star	tattoine
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ cd tattoine/
+Samanthas-MacBook-Pro-5:tattoine samanthaaustin$ ls
+obi_wan.txt		storm_trooper.txt
+Samanthas-MacBook-Pro-5:tattoine samanthaaustin$ rm obi_wan.txt 
+Samanthas-MacBook-Pro-5:tattoine samanthaaustin$ 
+Samanthas-MacBook-Pro-5:tattoine samanthaaustin$ pwd
+/Users/samanthaaustin/june-bugs/3-18-terminal/homework/homework_part_1/galaxy_far_far_away/tattoine
+Samanthas-MacBook-Pro-5:tattoine samanthaaustin$ cd ..
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ ls
+death_star	tattoine
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ mkdir yavin_4
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ cd death_star/
+Samanthas-MacBook-Pro-5:death_star samanthaaustin$ ls
+darth_vader.txt		millenium_falcon	storm_trooper.txt
+Samanthas-MacBook-Pro-5:death_star samanthaaustin$ mv millenium_falcon/ ../yavin_4/
+Samanthas-MacBook-Pro-5:death_star samanthaaustin$ ls
+darth_vader.txt		storm_trooper.txt
+Samanthas-MacBook-Pro-5:death_star samanthaaustin$ cd ..
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ ls
+death_star	tattoine	yavin_4
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ cd yavin_4/
+Samanthas-MacBook-Pro-5:yavin_4 samanthaaustin$ mkdir x_wing
+Samanthas-MacBook-Pro-5:yavin_4 samanthaaustin$ ls
+millenium_falcon	x_wing
+Samanthas-MacBook-Pro-5:yavin_4 samanthaaustin$ cd ..
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ tree
+.
+├── death_star
+│   ├── darth_vader.txt
+│   └── storm_trooper.txt
+├── tattoine
+│   └── storm_trooper.txt
+└── yavin_4
+    ├── millenium_falcon
+    │   ├── chewbaca.txt
+    │   ├── han_solo.txt
+    │   ├── luke.txt
+    │   └── princess_leia.txt
+    └── x_wing
+
+9 directories, 3 files
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ cd yavin_4/
+Samanthas-MacBook-Pro-5:yavin_4 samanthaaustin$ cd millenium_falcon/
+Samanthas-MacBook-Pro-5:millenium_falcon samanthaaustin$ mv princess_leia.txt/ ..
+Samanthas-MacBook-Pro-5:millenium_falcon samanthaaustin$ ls
+chewbaca.txt	han_solo.txt	luke.txt
+Samanthas-MacBook-Pro-5:millenium_falcon samanthaaustin$ cd ..
+Samanthas-MacBook-Pro-5:yavin_4 samanthaaustin$ ls
+millenium_falcon	princess_leia.txt	x_wing
+Samanthas-MacBook-Pro-5:yavin_4 samanthaaustin$ cd millenium_falcon/
+Samanthas-MacBook-Pro-5:millenium_falcon samanthaaustin$ ls
+chewbaca.txt	han_solo.txt	luke.txt
+Samanthas-MacBook-Pro-5:millenium_falcon samanthaaustin$ mv luke.txt ../x_wing
+Samanthas-MacBook-Pro-5:millenium_falcon samanthaaustin$ ls
+chewbaca.txt	han_solo.txt
+Samanthas-MacBook-Pro-5:millenium_falcon samanthaaustin$ ls
+chewbaca.txt	han_solo.txt
+Samanthas-MacBook-Pro-5:millenium_falcon samanthaaustin$ ..
+-bash: ..: command not found
+Samanthas-MacBook-Pro-5:millenium_falcon samanthaaustin$ cd ..
+Samanthas-MacBook-Pro-5:yavin_4 samanthaaustin$ ls
+millenium_falcon	princess_leia.txt	x_wing
+Samanthas-MacBook-Pro-5:yavin_4 samanthaaustin$ tree
+.
+├── millenium_falcon
+│   ├── chewbaca.txt
+│   └── han_solo.txt
+├── princess_leia.txt
+└── x_wing
+    └── luke.txt
+
+3 directories, 3 files
+Samanthas-MacBook-Pro-5:yavin_4 samanthaaustin$ mv millenium_falcon/ ..
+Samanthas-MacBook-Pro-5:yavin_4 samanthaaustin$ mv x_wing/ ..
+Samanthas-MacBook-Pro-5:yavin_4 samanthaaustin$ cd ..
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ ls
+death_star		tattoine		yavin_4
+millenium_falcon	x_wing
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ cd death_star/
+Samanthas-MacBook-Pro-5:death_star samanthaaustin$ mkdir tie_fighter1 
+Samanthas-MacBook-Pro-5:death_star samanthaaustin$ mkdir tie_fighter2
+Samanthas-MacBook-Pro-5:death_star samanthaaustin$ mkdir tie_fighter3
+Samanthas-MacBook-Pro-5:death_star samanthaaustin$ ls
+darth_vader.txt		tie_fighter1		tie_fighter3
+storm_trooper.txt	tie_fighter2
+Samanthas-MacBook-Pro-5:death_star samanthaaustin$ mv tie_fighter_1
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+Samanthas-MacBook-Pro-5:death_star samanthaaustin$ mv tie_fighter1 tie_fighter_1
+Samanthas-MacBook-Pro-5:death_star samanthaaustin$ ls
+darth_vader.txt		tie_fighter2		tie_fighter_1
+storm_trooper.txt	tie_fighter3
+Samanthas-MacBook-Pro-5:death_star samanthaaustin$ mv tie_fighter2 tie_fighter_2
+Samanthas-MacBook-Pro-5:death_star samanthaaustin$ mv tie_fighter3 tie_fighter_3
+Samanthas-MacBook-Pro-5:death_star samanthaaustin$ ld
+ld: warning: No version-min specified on command line
+ld: no object files specified
+Samanthas-MacBook-Pro-5:death_star samanthaaustin$ ls
+darth_vader.txt		tie_fighter_1		tie_fighter_3
+storm_trooper.txt	tie_fighter_2
+Samanthas-MacBook-Pro-5:death_star samanthaaustin$ mv darth_vader.txt tie_fighter_1
+Samanthas-MacBook-Pro-5:death_star samanthaaustin$ tree
+.
+├── storm_trooper.txt
+├── tie_fighter_1
+│   └── darth_vader.txt
+├── tie_fighter_2
+└── tie_fighter_3
+
+5 directories, 0 files
+Samanthas-MacBook-Pro-5:death_star samanthaaustin$ cp storm_trooper.txt tie_fighter_2
+cp: storm_trooper.txt is a directory (not copied).
+Samanthas-MacBook-Pro-5:death_star samanthaaustin$ cp -r storm_trooper.txt tie_fighter_2
+Samanthas-MacBook-Pro-5:death_star samanthaaustin$ ls
+storm_trooper.txt	tie_fighter_2
+tie_fighter_1		tie_fighter_3
+Samanthas-MacBook-Pro-5:death_star samanthaaustin$ tree
+.
+├── storm_trooper.txt
+├── tie_fighter_1
+│   └── darth_vader.txt
+├── tie_fighter_2
+│   └── storm_trooper.txt
+└── tie_fighter_3
+
+6 directories, 0 files
+Samanthas-MacBook-Pro-5:death_star samanthaaustin$ cp storm_trooper.txt tie_fighter_3
+cp: storm_trooper.txt is a directory (not copied).
+Samanthas-MacBook-Pro-5:death_star samanthaaustin$ cp -r storm_trooper.txt tie_fighter_3
+Samanthas-MacBook-Pro-5:death_star samanthaaustin$ ls
+storm_trooper.txt	tie_fighter_2
+tie_fighter_1		tie_fighter_3
+Samanthas-MacBook-Pro-5:death_star samanthaaustin$ mv tie_fighter_1 ..
+Samanthas-MacBook-Pro-5:death_star samanthaaustin$ mv tie_fighter_2 ..
+Samanthas-MacBook-Pro-5:death_star samanthaaustin$ mv tie_fighter_3 ..
+Samanthas-MacBook-Pro-5:death_star samanthaaustin$ ls
+storm_trooper.txt
+Samanthas-MacBook-Pro-5:death_star samanthaaustin$ cd ..
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ ls
+death_star		tie_fighter_1		x_wing
+millenium_falcon	tie_fighter_2		yavin_4
+tattoine		tie_fighter_3
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ rm tie_fighter_2
+rm: tie_fighter_2: is a directory
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ rm tie_fighter_3
+rm: tie_fighter_3: is a directory
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ rm -r tie_fighter_2
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ rm -r tie_fighter_3
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ tree
+.
+├── death_star
+│   └── storm_trooper.txt
+├── millenium_falcon
+│   ├── chewbaca.txt
+│   └── han_solo.txt
+├── tattoine
+│   └── storm_trooper.txt
+├── tie_fighter_1
+│   └── darth_vader.txt
+├── x_wing
+│   └── luke.txt
+└── yavin_4
+    └── princess_leia.txt
+
+10 directories, 3 files
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ touch x_wing/the_force.txt
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ tree
+.
+├── death_star
+│   └── storm_trooper.txt
+├── millenium_falcon
+│   ├── chewbaca.txt
+│   └── han_solo.txt
+├── tattoine
+│   └── storm_trooper.txt
+├── tie_fighter_1
+│   └── darth_vader.txt
+├── x_wing
+│   ├── luke.txt
+│   └── the_force.txt
+└── yavin_4
+    └── princess_leia.txt
+
+10 directories, 4 files
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ rm -r death_star/
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ mv x_wing yavin_4
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ mv millenium_falcon/ yavin_4
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ tree
+.
+├── tattoine
+│   └── storm_trooper.txt
+├── tie_fighter_1
+│   └── darth_vader.txt
+└── yavin_4
+    ├── millenium_falcon
+    │   ├── chewbaca.txt
+    │   └── han_solo.txt
+    ├── princess_leia.txt
+    └── x_wing
+        ├── luke.txt
+        └── the_force.txt
+
+8 directories, 4 files
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ git add -A
+fatal: not a git repository (or any of the parent directories): .git
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ git commit -m "Completed homework assignment"
+fatal: not a git repository (or any of the parent directories): .git
+Samanthas-MacBook-Pro-5:galaxy_far_far_away samanthaaustin$ cd ..
+Samanthas-MacBook-Pro-5:homework_part_1 samanthaaustin$ cd ..
+Samanthas-MacBook-Pro-5:homework samanthaaustin$ git init
+Initialized empty Git repository in /Users/samanthaaustin/june-bugs/3-18-terminal/homework/.git/
+Samanthas-MacBook-Pro-5:homework samanthaaustin$ git add -a
+error: unknown switch `a'
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --dry-run         dry run
+    -v, --verbose         be verbose
+
+    -i, --interactive     interactive picking
+    -p, --patch           select hunks interactively
+    -e, --edit            edit current diff and apply
+    -f, --force           allow adding otherwise ignored files
+    -u, --update          update tracked files
+    --renormalize         renormalize EOL of tracked files (implies -u)
+    -N, --intent-to-add   record only the fact that the path will be added later
+    -A, --all             add changes from all tracked and untracked files
+    --ignore-removal      ignore paths removed in the working tree (same as --no-all)
+    --refresh             don't add, only refresh the index
+    --ignore-errors       just skip files which cannot be added because of errors
+    --ignore-missing      check if - even missing - files are ignored in dry run
+    --chmod <(+/-)x>      override the executable bit of the listed files
+
+Samanthas-MacBook-Pro-5:homework samanthaaustin$ git add -A
+Samanthas-MacBook-Pro-5:homework samanthaaustin$ git commit -m "Completed homework assignment"
+[master (root-commit) 19b4a7e] Completed homework assignment
+ 5 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 homework_part_1/commands.txt
+ create mode 100644 homework_part_1/galaxy_far_far_away/yavin_4/millenium_falcon/chewbaca.txt
+ create mode 100644 homework_part_1/galaxy_far_far_away/yavin_4/millenium_falcon/han_solo.txt
+ create mode 100644 homework_part_1/galaxy_far_far_away/yavin_4/x_wing/luke.txt
+ create mode 100644 homework_part_1/galaxy_far_far_away/yavin_4/x_wing/the_force.txt
+Samanthas-MacBook-Pro-5:homework samanthaaustin$ git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+Samanthas-MacBook-Pro-5:homework samanthaaustin$ git remote -v
+Samanthas-MacBook-Pro-5:homework samanthaaustin$ fit log
+-bash: fit: command not found
+Samanthas-MacBook-Pro-5:homework samanthaaustin$ git log
+commit 19b4a7e40c26a9eec6b6d76f9f6e2c8b925ba8c3 (HEAD -> master)
+Author: Sami Austin <samicaustin@gmail.com>
+Date:   Mon Mar 18 19:04:57 2019 -0600
+
+    Completed homework assignment
+Samanthas-MacBook-Pro-5:homework samanthaaustin$ git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+Samanthas-MacBook-Pro-5:homework samanthaaustin$ 
