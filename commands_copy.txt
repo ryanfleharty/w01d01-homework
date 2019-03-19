@@ -1,0 +1,78 @@
+Part I
+Task 1:
+mkdir death_star
+touch darth_vader.txt princess_leia.txt storm_trooper.txt
+Task 2:
+cd ..
+mkdir galaxy_far_far_away
+cd galaxy_far_far_away
+mkdir tatooine
+Task 3:
+cd tatooine
+touch luke.txt ben_kenobi.txt
+mkdir millenium_falcon
+cd millenium_falcon
+touch han_solo.txt chewbaca.txt
+Part II
+Task 4
+cd ..
+mv ben_kenobi.txt obi_wan.txt
+Part III
+Task 5
+cd ../..
+cd death_star
+cp storm_trooper.txt storm_trooper2.txt
+cd ..
+mv death_star/2-storm_trooper2.txt galaxy_far_far_away/tatooine/
+Part IV
+Task 6
+mv galaxy_far_far_away/tatooine/luke.txt galaxy_far_far_away/tatooine/millenium_falcon/
+mv galaxy_far_far_away/tatooine/obi_wan.txt galaxy_far_far_away/tatooine/millenium_falcon/
+Task 7
+mv galaxy_far_far_away/tatooine/millenium_falcon/ galaxy_far_far_away/
+Task 8
+mv galaxy_far_far_away/millenium_falcon/ death_star/
+Task 9
+mv death_star/princess_leia.txt death_star/millenium_falcon/
+Part V
+Task 10
+rm death_star/millenium_falcon/obi_wan.txt
+Part VI
+Task 11
+mkdir galaxy_far_far_away/yavin_4
+Task 12
+mv death_star/millenium_falcon/ galaxy_far_far_away/yavin_4/
+Task 13
+mkdir galaxy_far_far_away/yavin_4/x_wing
+Task 14
+mv galaxy_far_far_away/yavin_4/millenium_falcon/princess_leia.txt galaxy_far_far_away/yavin_4/
+Task 15
+mv galaxy_far_far_away/yavin_4/millenium_falcon/ galaxy_far_far_away/
+mv galaxy_far_far_away/yavin_4/x_wing/ galaxy_far_far_away/
+Task 16
+cd death_star
+mkdir tie_fighter_1 tie_fighter_2 tie_fighter_3
+Task 17
+mv darth_vader.txt tie_fighter_1
+Task 18
+mv 3-storm_trooper.txt tie_fighter_3
+mv storm_trooper.txt tie_fighter_2
+Task 19
+cd ..
+mv death_star/tie_fighter_3/ galaxy_far_far_away/
+mv death_star/tie_fighter_2 galaxy_far_far_away/
+mv death_star/tie_fighter_1 galaxy_far_far_away/
+Part VII
+Task 20
+cd galaxy_far_far_away
+rm -r tie_fighter_2
+rm -r tie_fighter_3
+Part VIII
+Task 21
+touch x_wing/the_force.txt
+Task 22
+cd ..
+rm -r death_star/
+Task 23
+mv galaxy_far_far_away/x_wing/ galaxy_far_far_away/yavin_4/
+mv galaxy_far_far_away/millenium_falcon/ galaxy_far_far_away/yavin_4/
