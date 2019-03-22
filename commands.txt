@@ -1,0 +1,57 @@
+Toris-MacBook-Pro:~ tori$ cd ga
+Toris-MacBook-Pro:ga tori$ cd homework
+Toris-MacBook-Pro:homework tori$ cd homework_part_1
+Toris-MacBook-Pro:homework_part_1 tori$ mkdir death_star
+Toris-MacBook-Pro:homework_part_1 tori$ cd death_star
+Toris-MacBook-Pro:death_star tori$ touch darth_vader.txt
+Toris-MacBook-Pro:death_star tori$ touch princess_leia.txt
+Toris-MacBook-Pro:death_star tori$ touch storm_trooper.txt
+Toris-MacBook-Pro:death_star tori$ cd ..
+Toris-MacBook-Pro:homework_part_1 tori$ mkdir galaxy_far_far_away
+Toris-MacBook-Pro:homework_part_1 tori$ cd galaxy_far_far_away
+Toris-MacBook-Pro:galaxy_far_far_away tori$ mkdir tatooine
+Toris-MacBook-Pro:galaxy_far_far_away tori$ cd tatooine
+Toris-MacBook-Pro:tatooine tori$ touch luke.txt
+Toris-MacBook-Pro:tatooine tori$ touch ben_kenobi.txt
+Toris-MacBook-Pro:tatooine tori$ cd ..
+Toris-MacBook-Pro:galaxy_far_far_away tori$ cd tatooine
+Toris-MacBook-Pro:tatooine tori$ mkdir millenium_falcon
+Toris-MacBook-Pro:tatooine tori$ cd millenium_falcon
+Toris-MacBook-Pro:millenium_falcon tori$ touch han_solo.txt
+Toris-MacBook-Pro:millenium_falcon tori$ touch chewbaca.txt
+Toris-MacBook-Pro:millenium_falcon tori$ cd ..
+Toris-MacBook-Pro:tatooine tori$ mv ben_kenobi.txt obi_wan.txt
+Toris-MacBook-Pro:death_star tori$ rsync /Users/tori/GA/homework/homework_part_1/death_star/storm_trooper.txt /Users/tori/GA/homework/homework_part_1/galaxy_far_far_away/tatooine 
+Toris-MacBook-Pro:tatooine tori$ mv luke.txt obi_wan.txt millenium_falcon
+Toris-MacBook-Pro:tatooine tori$ cd ..
+Toris-MacBook-Pro:homework_part_1 tori$ mv /Users/tori/GA/homework/homework_part_1/galaxy_far_far_away/tatooine/millenium_falcon /Users/tori/GA/homework/homework_part_1/galaxy_far_far_away 
+Toris-MacBook-Pro:homework_part_1 tori$ mv /Users/tori/GA/homework/homework_part_1/galaxy_far_far_away/millenium_falcon /Users/tori/GA/homework/homework_part_1/death_star
+Toris-MacBook-Pro:homework_part_1 tori$ cd death_star
+Toris-MacBook-Pro:death_star tori$ mv princess_leia.txt millenium_falcon
+Toris-MacBook-Pro:death_star tori$ cd millenium_falcon
+Toris-MacBook-Pro:millenium_falcon tori$ rm obi_wan.txt
+Toris-MacBook-Pro:death_star tori$ cd ..
+Toris-MacBook-Pro:homework_part_1 tori$ cd galaxy_far_far_away
+Toris-MacBook-Pro:galaxy_far_far_away tori$ mkdir yavin_4
+
+Toris-MacBook-Pro:homework_part_1 tori$ mv /Users/tori/GA/homework/homework_part_1/death_star/millenium_falcon /Users/tori/GA/homework/homework_part_1/galaxy_far_far_away/yavin_4 
+Toris-MacBook-Pro:homework_part_1 tori$ cd galaxy_far_far_away
+Toris-MacBook-Pro:galaxy_far_far_away tori$ cd yavin_4
+Toris-MacBook-Pro:yavin_4 tori$ mkdir x_wing
+Toris-MacBook-Pro:yavin_4 tori$ 
+Toris-MacBook-Pro:galaxy_far_far_away tori$ mv /Users/tori/GA/homework/homework_part_1/galaxy_far_far_away/yavin_4/millenium_falcon/princess_leia.txt /Users/tori/GA/homework/homework_part_1/galaxy_far_far_away/yavin_4 
+Toris-MacBook-Pro:galaxy_far_far_away tori$ 
+Toris-MacBook-Pro:galaxy_far_far_away tori$ mv /Users/tori/GA/homework/homework_part_1/galaxy_far_far_away/yavin_4/millenium_falcon/luke.txt /Users/tori/GA/homework/homework_part_1/galaxy_far_far_away/yavin_4/x_wing 
+Toris-MacBook-Pro:galaxy_far_far_away tori$ mv /Users/tori/GA/homework/homework_part_1/galaxy_far_far_away/yavin_4/millenium_falcon /Users/tori/GA/homework/homework_part_1/galaxy_far_far_away/yavin_4/x_wing /Users/tori/GA/homework/homework_part_1/galaxy_far_far_away 
+Toris-MacBook-Pro:death_star tori$ mkdir tie_fighter_1 tie_fighter_2 tie_fighter_3
+Toris-MacBook-Pro:death_star tori$ mv darth_vader.txt tie_fighter_1
+Toris-MacBook-Pro:death_star tori$ cp storm_trooper.txt tie_fighter_2
+Toris-MacBook-Pro:death_star tori$ cp storm_trooper.txt tie_fighter_3
+Toris-MacBook-Pro:homework_part_1 tori$ mv /Users/tori/GA/homework/homework_part_1/death_star/tie_fighter_1 /Users/tori/GA/homework/homework_part_1/death_star/tie_fighter_2 /Users/tori/GA/homework/homework_part_1/death_star/tie_fighter_3 /Users/tori/GA/homework/homework_part_1/galaxy_far_far_away 
+Toris-MacBook-Pro:galaxy_far_far_away tori$ rm -r tie_fighter_2
+Toris-MacBook-Pro:galaxy_far_far_away tori$ rm -r tie_fighter_3
+Toris-MacBook-Pro:x_wing tori$ touch the_force.txt
+Toris-MacBook-Pro:x_wing tori$ cd .. cd ..
+Toris-MacBook-Pro:galaxy_far_far_away tori$ cd ..
+Toris-MacBook-Pro:homework_part_1 tori$ rm -r death_star
+Toris-MacBook-Pro:homework_part_1 tori$ mv /Users/tori/GA/homework/homework_part_1/galaxy_far_far_away/x_wing /Users/tori/GA/homework/homework_part_1/galaxy_far_far_away/millenium_falcon /Users/tori/Desktop/yavin_4 
