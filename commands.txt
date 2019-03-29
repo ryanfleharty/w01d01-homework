@@ -1,0 +1,288 @@
+Last login: Mon Mar 18 16:09:12 on ttys000
+Generals-MacBook-Pro:~ gadenver$ ls
+190318-folder	Desktop		Movies		css		sei-class-stuff
+190318-stuff	Documents	Music		hello_app	sei_clasS_stuff
+190319-folder	Downloads	Pictures	index.html
+Applications	Library		Public		sei-class-dir
+Generals-MacBook-Pro:~ gadenver$ mv 190318-stuff/ 190318-folder/
+Generals-MacBook-Pro:~ gadenver$ cd 190318-folder/
+Generals-MacBook-Pro:190318-folder gadenver$ ls
+190318-stuff	homework
+Generals-MacBook-Pro:190318-folder gadenver$ cd ..
+Generals-MacBook-Pro:~ gadenver$ ls
+190318-folder	Documents	Music		hello_app	sei_clasS_stuff
+190319-folder	Downloads	Pictures	index.html
+Applications	Library		Public		sei-class-dir
+Desktop		Movies		css		sei-class-stuff
+Generals-MacBook-Pro:~ gadenver$ cd 190318-folder/
+Generals-MacBook-Pro:190318-folder gadenver$ ls
+190318-stuff	homework
+Generals-MacBook-Pro:190318-folder gadenver$ cd homework/
+Generals-MacBook-Pro:homework gadenver$ ls
+git_stuff	homework_part_1
+Generals-MacBook-Pro:homework gadenver$ cd homework_part_1/
+Generals-MacBook-Pro:homework_part_1 gadenver$ tree
+.
+├── commands.txt
+├── death_star
+│   ├── darth_vader.txt
+│   ├── millenium_falcon
+│   │   ├── chewbaca.txt
+│   │   ├── han_solo.txt
+│   │   ├── luke.txt
+│   │   └── princess_leia.txt
+│   └── storm_trooper.txt
+└── galaxy_far_far_away
+    ├── tatooine
+    │   └── storm_trooper.txt
+    └── yavin_4
+
+5 directories, 8 files
+Generals-MacBook-Pro:homework_part_1 gadenver$ cd death_star/
+Generals-MacBook-Pro:death_star gadenver$ mv millenium_falcon/ ../galaxy_far_far_away/yavin_4/
+Generals-MacBook-Pro:death_star gadenver$ tree
+.
+├── darth_vader.txt
+└── storm_trooper.txt
+
+0 directories, 2 files
+Generals-MacBook-Pro:death_star gadenver$ cd ..
+Generals-MacBook-Pro:homework_part_1 gadenver$ tree
+.
+├── commands.txt
+├── death_star
+│   ├── darth_vader.txt
+│   └── storm_trooper.txt
+└── galaxy_far_far_away
+    ├── tatooine
+    │   └── storm_trooper.txt
+    └── yavin_4
+        └── millenium_falcon
+            ├── chewbaca.txt
+            ├── han_solo.txt
+            ├── luke.txt
+            └── princess_leia.txt
+
+5 directories, 8 files
+Generals-MacBook-Pro:homework_part_1 gadenver$ cd galaxy_far_far_away/yavin_4/
+Generals-MacBook-Pro:yavin_4 gadenver$ mkdir x_wing
+Generals-MacBook-Pro:yavin_4 gadenver$ tree
+.
+├── millenium_falcon
+│   ├── chewbaca.txt
+│   ├── han_solo.txt
+│   ├── luke.txt
+│   └── princess_leia.txt
+└── x_wing
+
+2 directories, 4 files
+Generals-MacBook-Pro:yavin_4 gadenver$ cd ..
+Generals-MacBook-Pro:galaxy_far_far_away gadenver$ tree
+.
+├── tatooine
+│   └── storm_trooper.txt
+└── yavin_4
+    ├── millenium_falcon
+    │   ├── chewbaca.txt
+    │   ├── han_solo.txt
+    │   ├── luke.txt
+    │   └── princess_leia.txt
+    └── x_wing
+
+4 directories, 5 files
+Generals-MacBook-Pro:galaxy_far_far_away gadenver$ cd yavin_4/
+Generals-MacBook-Pro:yavin_4 gadenver$ mv millenium_falcon/ x_wing/ ../../galaxy_far_far_away/
+Generals-MacBook-Pro:yavin_4 gadenver$ tree
+.
+
+0 directories, 0 files
+Generals-MacBook-Pro:yavin_4 gadenver$ cd ..
+Generals-MacBook-Pro:galaxy_far_far_away gadenver$ tree
+.
+├── millenium_falcon
+│   ├── chewbaca.txt
+│   ├── han_solo.txt
+│   ├── luke.txt
+│   └── princess_leia.txt
+├── tatooine
+│   └── storm_trooper.txt
+├── x_wing
+└── yavin_4
+
+4 directories, 5 files
+Generals-MacBook-Pro:galaxy_far_far_away gadenver$ cd ..
+Generals-MacBook-Pro:homework_part_1 gadenver$ cd death_star/
+Generals-MacBook-Pro:death_star gadenver$ mkdir tie_fighter_1 tie_fighter_2 tie_fighter_3
+Generals-MacBook-Pro:death_star gadenver$ dir
+-bash: dir: command not found
+Generals-MacBook-Pro:death_star gadenver$ tree
+.
+├── darth_vader.txt
+├── storm_trooper.txt
+├── tie_fighter_1
+├── tie_fighter_2
+└── tie_fighter_3
+
+3 directories, 2 files
+Generals-MacBook-Pro:death_star gadenver$ mv darth_vader.txt tie_fighter_1
+Generals-MacBook-Pro:death_star gadenver$ tree
+.
+├── storm_trooper.txt
+├── tie_fighter_1
+│   └── darth_vader.txt
+├── tie_fighter_2
+└── tie_fighter_3
+
+3 directories, 2 files
+Generals-MacBook-Pro:death_star gadenver$ cp storm_trooper.txt tie_fighter_2/ 
+Generals-MacBook-Pro:death_star gadenver$ cp storm_trooper.txt tie_fighter_3/
+Generals-MacBook-Pro:death_star gadenver$ tree
+.
+├── storm_trooper.txt
+├── tie_fighter_1
+│   └── darth_vader.txt
+├── tie_fighter_2
+│   └── storm_trooper.txt
+└── tie_fighter_3
+    └── storm_trooper.txt
+
+3 directories, 4 files
+Generals-MacBook-Pro:death_star gadenver$ mv tie_fighter_1 tie_fighter_2 tie_fighter_3 ../galaxy_far_far_away/
+Generals-MacBook-Pro:death_star gadenver$ cd ..
+Generals-MacBook-Pro:homework_part_1 gadenver$ cd galaxy_far_far_away
+Generals-MacBook-Pro:galaxy_far_far_away gadenver$ tree
+.
+├── millenium_falcon
+│   ├── chewbaca.txt
+│   ├── han_solo.txt
+│   ├── luke.txt
+│   └── princess_leia.txt
+├── tatooine
+│   └── storm_trooper.txt
+├── tie_fighter_1
+│   └── darth_vader.txt
+├── tie_fighter_2
+│   └── storm_trooper.txt
+├── tie_fighter_3
+│   └── storm_trooper.txt
+├── x_wing
+└── yavin_4
+
+7 directories, 8 files
+Generals-MacBook-Pro:galaxy_far_far_away gadenver$ rm tie_fighter_2
+rm: tie_fighter_2: is a directory
+Generals-MacBook-Pro:galaxy_far_far_away gadenver$ rm -r tie_fighter_2
+Generals-MacBook-Pro:galaxy_far_far_away gadenver$ rm -r tie_fighter_3
+Generals-MacBook-Pro:galaxy_far_far_away gadenver$ tree
+.
+├── millenium_falcon
+│   ├── chewbaca.txt
+│   ├── han_solo.txt
+│   ├── luke.txt
+│   └── princess_leia.txt
+├── tatooine
+│   └── storm_trooper.txt
+├── tie_fighter_1
+│   └── darth_vader.txt
+├── x_wing
+└── yavin_4
+
+5 directories, 6 files
+Generals-MacBook-Pro:galaxy_far_far_away gadenver$ cd x_wing/
+Generals-MacBook-Pro:x_wing gadenver$ touch the_force.txt
+Generals-MacBook-Pro:x_wing gadenver$ tree
+.
+└── the_force.txt
+
+0 directories, 1 file
+Generals-MacBook-Pro:x_wing gadenver$ cd.
+-bash: cd.: command not found
+Generals-MacBook-Pro:x_wing gadenver$ cd ..
+Generals-MacBook-Pro:galaxy_far_far_away gadenver$ tree
+.
+├── millenium_falcon
+│   ├── chewbaca.txt
+│   ├── han_solo.txt
+│   ├── luke.txt
+│   └── princess_leia.txt
+├── tatooine
+│   └── storm_trooper.txt
+├── tie_fighter_1
+│   └── darth_vader.txt
+├── x_wing
+│   └── the_force.txt
+└── yavin_4
+
+5 directories, 7 files
+Generals-MacBook-Pro:galaxy_far_far_away gadenver$ cd ..
+Generals-MacBook-Pro:homework_part_1 gadenver$ tree
+.
+├── commands.txt
+├── death_star
+│   └── storm_trooper.txt
+└── galaxy_far_far_away
+    ├── millenium_falcon
+    │   ├── chewbaca.txt
+    │   ├── han_solo.txt
+    │   ├── luke.txt
+    │   └── princess_leia.txt
+    ├── tatooine
+    │   └── storm_trooper.txt
+    ├── tie_fighter_1
+    │   └── darth_vader.txt
+    ├── x_wing
+    │   └── the_force.txt
+    └── yavin_4
+
+7 directories, 9 files
+Generals-MacBook-Pro:homework_part_1 gadenver$ rm -r death_star/
+Generals-MacBook-Pro:homework_part_1 gadenver$ tree
+.
+├── commands.txt
+└── galaxy_far_far_away
+    ├── millenium_falcon
+    │   ├── chewbaca.txt
+    │   ├── han_solo.txt
+    │   ├── luke.txt
+    │   └── princess_leia.txt
+    ├── tatooine
+    │   └── storm_trooper.txt
+    ├── tie_fighter_1
+    │   └── darth_vader.txt
+    ├── x_wing
+    │   └── the_force.txt
+    └── yavin_4
+
+6 directories, 8 files
+Generals-MacBook-Pro:homework_part_1 gadenver$ cd galaxy_far_far_away/
+Generals-MacBook-Pro:galaxy_far_far_away gadenver$ mv x_wing/ millenium_falcon/ yavin_4/
+Generals-MacBook-Pro:galaxy_far_far_away gadenver$ tree
+.
+├── tatooine
+│   └── storm_trooper.txt
+├── tie_fighter_1
+│   └── darth_vader.txt
+└── yavin_4
+    ├── millenium_falcon
+    │   ├── chewbaca.txt
+    │   ├── han_solo.txt
+    │   ├── luke.txt
+    │   └── princess_leia.txt
+    └── x_wing
+        └── the_force.txt
+
+5 directories, 7 files
+Generals-MacBook-Pro:galaxy_far_far_away gadenver$ cd ..
+Generals-MacBook-Pro:homework_part_1 gadenver$ cp commands.txt ../git_stuff/w01d01-homework/
+Generals-MacBook-Pro:homework_part_1 gadenver$ cd ..
+Generals-MacBook-Pro:homework gadenver$ ls
+git_stuff	homework_part_1
+Generals-MacBook-Pro:homework gadenver$ cd git_stuff/
+Generals-MacBook-Pro:git_stuff gadenver$ ls
+w01d01-homework
+Generals-MacBook-Pro:git_stuff gadenver$ cd w01d01-homework/
+Generals-MacBook-Pro:w01d01-homework gadenver$ ls
+README.md	commands.txt
+Generals-MacBook-Pro:w01d01-homework gadenver$ git add -A
+Generals-MacBook-Pro:w01d01-homework gadenver$ git commit -m "Homework Completed, finally"
+[master cc974ba] Homework Completed, finally
