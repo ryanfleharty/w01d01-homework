@@ -1,0 +1,56 @@
+Mkdir death_star
+Touch darth_vader.txt princess_leia.txt storm_trooper.txt
+Mkdir galaxy_far_far_away galaxy_far_far_away/tatooine
+Touch galaxy_far_far_away/tatooine/luke.txt galaxy_far_far_away/tatooine/ben_kenobi.txt
+mkdir galaxy_far_far_away/tatooine/millenium_falcon
+Touch galaxy_far_far_away/tatooine/millenium_falcon/han_solo.txt galaxy_far_far_away/tatooine/millenium_falcon/chewbaca.txt
+
+
+
+
+Mv galaxy_far_far_away/tatooine/ben_kenobi.txt galaxy_far_far_away/tatooine/obi_wan.txt
+
+cp death_star/storm_trooper.txt galaxy_far_far_away/tatooine/
+
+
+mv galaxy_far_far_away/tatooine/luke.txt galaxy_far_far_away/tatooine/millenium_falcon/luke.txt
+mv galaxy_far_far_away/tatooine/obi_wan.txt galaxy_far_far_away/tatooine/millenium_falcon/obi_wan.txt
+
+mv galaxy_far_far_away/tatooine/millenium_falcon galaxy_far_far_away/millenium_falcon
+
+mv galaxy_far_far_away/millenium_falcon death_star/millenium_falcon
+
+mv death_star/princess_leia.txt death_star/millenium_falcon/princess_leia.txt
+
+rm death_star/millenium_falcon/obi_wan.txt
+
+mkdir galaxy_far_far_away/yavin_4
+mkdir galaxy_far_far_away/yavin_4/x_wing
+
+mv death_star/millenium_falcon galaxy_far_far_away/yavin_4/millenium_falcon
+
+mv galaxy_far_far_away/millenium_falcon/princess_leia.txt galaxy_far_far_away/yavin_4/princess_leia.txt
+mv galaxy_far_far_away/millenium_falcon/luke.txt galaxy_far_far_away/yavin_4/x_wing/luke.txt
+
+mv galaxy_far_far_away/yavin_4/x_wing galaxy_far_far_away/x_wing
+
+
+mkdir death_star/tie_fighter_1 death_star/tie_fighter_2 death_star/tie_fighter_3
+
+mv death_star/darth_vader.txt death_star/tie_fighter_1/darth_vader.txt
+
+cp death_star/storm_trooper.txt death_star/tie_fighter_2/storm_trooper.txt
+cp death_star/storm_trooper.txt death_star/tie_fighter_3/storm_trooper.txt
+
+mv death_star/tie_fighter_1 galaxy_far_far_away/tie_fighter_1
+mv death_star/tie_fighter_2 galaxy_far_far_away/tie_fighter_2
+mv death_star/tie_fighter_3 galaxy_far_far_away/tie_fighter_3
+
+rm galaxy_far_far_away/tie_fighter_2 galaxy_far_far_away/tie_fighter_3
+
+Touch galaxy_far_far_away/x_wing/the_force.txt
+
+rm -f death_star
+
+mv galaxy_far_far_away/millenium_falcon galaxy_far_far_away/yavin_4/millenium_falcon
+mv galaxy_far_far_away/x_wing galaxy_far_far_away/yavin_4/x_wing
