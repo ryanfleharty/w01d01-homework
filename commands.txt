@@ -1,0 +1,138 @@
+Part I: Set the Scene
+1.
+Destinys-MacBook-Pro:homework_part_1 moosesdeuces$ mkdir death_star
+Destinys-MacBook-Pro:homework_part_1 moosesdeuces$ cd death_star/
+Destinys-MacBook-Pro:death_star moosesdeuces$ touch darth_vader.txt princess_leia.txt strom_trooper.txt
+Destinys-MacBook-Pro:death_star moosesdeuces$ ls
+darth_vader.txt		princess_leia.txt	storm_trooper.txt
+
+2.
+Destinys-MacBook-Pro:tatooine moosesdeuces$ cd ..
+Destinys-MacBook-Pro:death_star moosesdeuces$ mkdir galaxy_far_far_away
+Destinys-MacBook-Pro:death_star moosesdeuces$ cd galaxy_far_far_away/
+Destinys-MacBook-Pro:galaxy_far_far_away moosesdeuces$ mkdir tatooine
+Destinys-MacBook-Pro:galaxy_far_far_away moosesdeuces$ cd tatooine/
+Destinys-MacBook-Pro:tatooine moosesdeuces$ touch luke.txt ben_kenobi.txt
+Destinys-MacBook-Pro:tatooine moosesdeuces$ ls
+ben_kenobi.txt	luke.txt
+
+3.
+Destinys-MacBook-Pro:tatooine moosesdeuces$ mkdir millenium_falcon
+Destinys-MacBook-Pro:tatooine moosesdeuces$ cd millenium_falcon/
+Destinys-MacBook-Pro:millenium_falcon moosesdeuces$ touch han_solo.txt chewbaca.txt
+Destinys-MacBook-Pro:millenium_falcon moosesdeuces$ ls
+chewbaca.txt	han_solo.txt
+
+
+Part III: mv - rename
+4. Destinys-MacBook-Pro:millenium_falcon moosesdeuces$ cd ../../tatooine/
+Destinys-MacBook-Pro:tatooine moosesdeuces$ mv ben_kenobi.txt obi_wan.txt
+
+
+Part II: cp - copy
+5.
+Destinys-MacBook-Pro:homework_part_1 moosesdeuces$ man cp
+Destinys-MacBook-Pro:tatooine moosesdeuces$ cd ../../death_star/
+Destinys-MacBook-Pro:death_star moosesdeuces$ cp storm_trooper.txt ~/sei-june-bug/3-18_terminal/homework/homework_part_1/galaxy_far_far_away/tatooine/
+Destinys-MacBook-Pro:death_star moosesdeuces$ cd ../galaxy_far_far_away/tatooine/
+Destinys-MacBook-Pro:tatooine moosesdeuces$ ls
+luke.txt		obi_wan.txt
+millenium_falcon	storm_trooper.txt
+
+
+Part IV: mv - move
+6.
+Destinys-MacBook-Pro:death_star moosesdeuces$ cd ../galaxy_far_far_away/tatooine/
+Destinys-MacBook-Pro:tatooine moosesdeuces$ mv luke.txt ~/sei-june-bug/3-18_terminal/homework/homework_part_1/galaxy_far_far_away/tatooine/millenium_falcon/
+Destinys-MacBook-Pro:tatooine moosesdeuces$ mv obi_wan.txt ~/sei-june-bug/3-18_terminal/homework/homework_part_1/galaxy_far_far_away/tatooine/millenium_falcon/
+
+7. 
+Destinys-MacBook-Pro:millenium_falcon moosesdeuces$ cd ..
+Destinys-MacBook-Pro:tatooine moosesdeuces$ mv millenium_falcon/ ~/sei-june-bug/3-18_terminal/homework/homework_part_1/galaxy_far_far_away/
+Destinys-MacBook-Pro:tatooine moosesdeuces$ cd ..
+Destinys-MacBook-Pro:galaxy_far_far_away moosesdeuces$ ls
+millenium_falcon	tatooine
+
+8.
+Destinys-MacBook-Pro:galaxy_far_far_away moosesdeuces$ mv millenium_falcon/ ~/sei-june-bug/3-18_terminal/homework/homework_part_1/death_star/
+Destinys-MacBook-Pro:galaxy_far_far_away moosesdeuces$ cd ../death_star
+Destinys-MacBook-Pro:death_star moosesdeuces$ ls
+darth_vader.txt		princess_leia.txt
+millenium_falcon	storm_trooper.txt
+
+9.
+Destinys-MacBook-Pro:death_star moosesdeuces$ mv princess_leia.txt ~/sei-june-bug/3-18_terminal/homework/homework_part_1/death_star/millenium_falcon/
+Destinys-MacBook-Pro:death_star moosesdeuces$ cd millenium_falcon/
+Destinys-MacBook-Pro:millenium_falcon moosesdeuces$ ls
+chewbaca.txt		luke.txt		princess_leia.txt
+han_solo.txt		obi_wan.txt
+
+
+Part V: rm - remove
+10.
+Destinys-MacBook-Pro:millenium_falcon moosesdeuces$ rm obi_wan.txt 
+Destinys-MacBook-Pro:millenium_falcon moosesdeuces$ ls
+chewbaca.txt		luke.txt
+han_solo.txt		princess_leia.txt
+
+
+Part VI: all together
+11.
+Destinys-MacBook-Pro:millenium_falcon moosesdeuces$ cd ../../galaxy_far_far_away/
+Destinys-MacBook-Pro:galaxy_far_far_away moosesdeuces$ mkdir yavin_4
+
+12.
+Destinys-MacBook-Pro:galaxy_far_far_away moosesdeuces$ cd ../death_star/
+Destinys-MacBook-Pro:death_star moosesdeuces$ mv millenium_falcon/ ~/sei-june-bug/3-18_terminal/homework/homework_part_1/galaxy_far_far_away/yavin_4/
+
+13.
+Destinys-MacBook-Pro:death_star moosesdeuces$ cd ../galaxy_far_far_away/yavin_4/
+Destinys-MacBook-Pro:yavin_4 moosesdeuces$ mkdir x_wing
+
+14.
+Destinys-MacBook-Pro:yavin_4 moosesdeuces$ cd millenium_falcon/
+Destinys-MacBook-Pro:millenium_falcon moosesdeuces$ mv princess_leia.txt ~/sei-june-bug/3-18_terminal/homework/homework_part_1/galaxy_far_far_away/yavin_4/
+
+15.
+Destinys-MacBook-Pro:millenium_falcon moosesdeuces$ mv luke.txt ~/sei-june-bug/3-18_terminal/homework/homework_part_1/galaxy_far_far_away/yavin_4/x_wing/
+Destinys-MacBook-Pro:millenium_falcon moosesdeuces$ cd ..
+Destinys-MacBook-Pro:yavin_4 moosesdeuces$ mv millenium_falcon/ ~/sei-june-bug/3-18_terminal/homework/homework_part_1/galaxy_far_far_away/
+Destinys-MacBook-Pro:yavin_4 moosesdeuces$ mv x_wing/ ~/sei-june-bug/3-18_terminal/homework/homework_part_1/galaxy_far_far_away/
+
+16.
+Destinys-MacBook-Pro:yavin_4 moosesdeuces$ cd ../../death_star/
+Destinys-MacBook-Pro:death_star moosesdeuces$ mkdir tie_fighter_1 tie_fighter_2 tie_fighter_3
+
+17.
+Destinys-MacBook-Pro:death_star moosesdeuces$ mv darth_vader.txt ~/sei-june-bug/3-18_terminal/homework/homework_part_1/death_star/tie_fighter_1
+
+18.
+Destinys-MacBook-Pro:death_star moosesdeuces$ cp storm_trooper.txt ~/sei-june-bug/3-18_terminal/homework/homework_part_1/death_star/tie_fighter_2
+Destinys-MacBook-Pro:death_star moosesdeuces$ cp storm_trooper.txt ~/sei-june-bug/3-18_terminal/homework/homework_part_1/death_star/tie_fighter_3
+
+19.
+Destinys-MacBook-Pro:death_star moosesdeuces$ mv tie_fighter_1 ~/sei-june-bug/3-18_terminal/homework/homework_part_1/galaxy_far_far_away/
+Destinys-MacBook-Pro:death_star moosesdeuces$ mv tie_fighter_2 ~/sei-june-bug/3-18_terminal/homework/homework_part_1/galaxy_far_far_away/
+Destinys-MacBook-Pro:death_star moosesdeuces$ mv tie_fighter_3 ~/sei-june-bug/3-18_terminal/homework/homework_part_1/galaxy_far_far_away/
+
+
+Part VII: rm -r: remove directories and everything they contain
+20.
+Destinys-MacBook-Pro:death_star moosesdeuces$ cd ../galaxy_far_far_away/
+Destinys-MacBook-Pro:galaxy_far_far_away moosesdeuces$ rm -rf tie_fighter_2 tie_fighter_3
+
+
+Part VIII:
+21.
+Destinys-MacBook-Pro:galaxy_far_far_away moosesdeuces$ cd x_wing/
+Destinys-MacBook-Pro:x_wing moosesdeuces$ touch the_force.txt
+
+22.
+Destinys-MacBook-Pro:x_wing moosesdeuces$ cd ../..
+Destinys-MacBook-Pro:homework_part_1 moosesdeuces$ rm -rf death_star/
+
+23.
+Destinys-MacBook-Pro:homework_part_1 moosesdeuces$ cd galaxy_far_far_away/
+Destinys-MacBook-Pro:galaxy_far_far_away moosesdeuces$ mv x_wing/ millenium_falcon/ ~/sei-june-bug/3-18_terminal/homework/homework_part_1/galaxy_far_far_away/yavin_4/
+
+
